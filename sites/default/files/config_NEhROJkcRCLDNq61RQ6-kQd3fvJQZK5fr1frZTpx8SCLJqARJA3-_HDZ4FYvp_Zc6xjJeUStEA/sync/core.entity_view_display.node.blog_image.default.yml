@@ -1,0 +1,28 @@
+uuid: deedf10b-0369-4951-838a-6455165667ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_image.body
+    - node.type.blog_image
+  module:
+    - text
+    - user
+id: node.blog_image.default
+targetEntityType: node
+bundle: blog_image
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,7 @@
+migration_details.upload_details:
+  path: '/apigee-d7-to-d8'
+  defaults:
+    _form: '\Drupal\migration_details\Form\UploadDetails'
+    _title: 'Apigee D7 to D8'
+  requirements:
+    _access: 'TRUE'

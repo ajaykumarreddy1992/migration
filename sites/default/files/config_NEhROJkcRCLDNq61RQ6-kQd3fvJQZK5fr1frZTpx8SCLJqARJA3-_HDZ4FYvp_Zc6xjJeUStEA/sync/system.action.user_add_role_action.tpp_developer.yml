@@ -1,0 +1,14 @@
+uuid: b9d3f774-38d6-49ea-9cb2-82e199d49657
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tpp_developer
+  module:
+    - user
+id: user_add_role_action.tpp_developer
+label: 'Add the TPP Developer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: tpp_developer

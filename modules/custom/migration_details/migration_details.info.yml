@@ -1,0 +1,5 @@
+name: 'Apigee D7 to D8'
+type: module
+description: 'Apigee D7 to D8 details'
+core: 8.x
+package: 'Custom'

@@ -1,0 +1,20 @@
+uuid: d759419c-f477-4a53-878b-81484d125305
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'create field_user_fca_id'
+  - 'create field_user_terms_conditions'
+  - 'diff view changes'
+  - 'search content'
+  - 'view faq page'
+  - 'view files'

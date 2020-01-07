@@ -1,0 +1,30 @@
+uuid: 70059010-039f-4cf2-a4f5-7028dc1deeb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.smart_method.body
+    - node.type.smart_method
+  module:
+    - text
+    - user
+id: node.smart_method.teaser
+targetEntityType: node
+bundle: smart_method
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,27 @@
+uuid: 346af872-df84-4357-a82a-ef5a6ca087ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_smartdocs
+    - node.type.smartdocs
+  module:
+    - file
+id: node.smartdocs.field_smartdocs
+field_name: field_smartdocs
+entity_type: node
+bundle: smartdocs
+label: Smartdocs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: smartdocs
+  file_extensions: 'json yaml yml'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,10 @@
+uuid: 094e378f-3c46-4e61-a826-0c0f88e41c31
+langcode: en
+status: true
+dependencies: {  }
+id: developer
+label: Developer
+weight: 13
+is_admin: null
+permissions:
+  - 'view company users'

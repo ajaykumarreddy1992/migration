@@ -1,0 +1,11 @@
+uuid: 86752ab4-5e01-4fb6-a448-6a0a33b67300
+langcode: en
+status: true
+dependencies: {  }
+id: company_administrator
+label: 'Company Administrator'
+weight: 12
+is_admin: null
+permissions:
+  - 'manage company users'
+  - 'view company users'

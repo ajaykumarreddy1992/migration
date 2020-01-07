@@ -1,0 +1,28 @@
+uuid: df225ca6-3546-41f1-8f60-7d48d8753ced
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.forum.body
+    - node.type.forum
+  module:
+    - text
+    - user
+id: node.forum.default
+targetEntityType: node
+bundle: forum
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

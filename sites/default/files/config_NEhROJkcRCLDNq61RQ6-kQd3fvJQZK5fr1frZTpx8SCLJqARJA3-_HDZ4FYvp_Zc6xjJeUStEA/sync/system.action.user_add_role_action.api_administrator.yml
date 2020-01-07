@@ -1,0 +1,14 @@
+uuid: 765da1f5-905b-4720-b1b2-368a1aa113b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.api_administrator
+  module:
+    - user
+id: user_add_role_action.api_administrator
+label: 'Add the API Administrator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: api_administrator

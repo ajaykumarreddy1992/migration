@@ -1,0 +1,14 @@
+uuid: 68b03b7a-3d7e-42e4-8498-1b22409087a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.company_administrator
+  module:
+    - user
+id: user_remove_role_action.company_administrator
+label: 'Remove the Company Administrator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: company_administrator

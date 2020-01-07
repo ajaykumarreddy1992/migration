@@ -1,0 +1,14 @@
+uuid: 520cef38-4fc2-466f-ba58-e44bfa205b69
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.api_administrator
+  module:
+    - user
+id: user_remove_role_action.api_administrator
+label: 'Remove the API Administrator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: api_administrator

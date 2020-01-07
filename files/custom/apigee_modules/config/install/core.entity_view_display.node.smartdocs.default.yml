@@ -1,0 +1,41 @@
+uuid: da2ce79f-bb6d-48fd-8107-a41ba02833df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.smartdocs.field_smartdocs
+    - node.type.smartdocs
+  module:
+    - swagger_ui_formatter
+    - user
+id: node.smartdocs.default
+targetEntityType: node
+bundle: smartdocs
+mode: default
+content:
+  field_smartdocs:
+    weight: 101
+    label: hidden
+    settings:
+      validator: default
+      validator_url: ''
+      doc_expansion: list
+      show_top_bar: false
+      sort_tags_by_name: false
+      supported_submit_methods:
+        get: get
+        put: put
+        post: post
+        delete: delete
+        options: options
+        head: head
+        patch: patch
+    third_party_settings: {  }
+    type: swagger_ui_file
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

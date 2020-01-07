@@ -1,0 +1,28 @@
+uuid: 8b498430-ee4f-42ff-9c00-cf599a6c771a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_video.body
+    - node.type.blog_video
+  module:
+    - text
+    - user
+id: node.blog_video.default
+targetEntityType: node
+bundle: blog_video
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

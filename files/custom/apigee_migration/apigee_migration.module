@@ -1,0 +1,42 @@
+<?php
+
+use Drupal\migrate\MigrateSkipRowException;
+use Drupal\migrate\Plugin\MigrationInterface;
+use Drupal\migrate\Plugin\MigrateSourceInterface;
+use Drupal\migrate\Row;
+
+/**
+ * Implements hook_migrate_prepare_row().
+ */
+function apigee_migration_migrate_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  $entity_type = $row->getSourceProperty('entity_type');
+  $entities = ['user', 'node', 'taxonomy_term'];
+  $field_name = $row->getSourceProperty('field_name');
+  if (in_array($entity_type, $entities) && ($field_name == 'field_first_name' || $field_name == 'field_last_name')) {
+    throw new MigrateSkipRowException('', TRUE);
+  }
+
+  // Excluding SmartDocs related vocabularies from migration
+  if ($migration->id() == "d7_taxonomy_vocabulary") {
+    $vocabs = ['SmartDocs models', 'SmartDocs verbs', 'SmartDocs tags'];
+    if (in_array($row->getSource()['name'], $vocabs)) {
+      return FALSE;
+      //      throw new MigrateSkipRowException('', TRUE);
+    }
+
+  }
+
+  // Ignore content types from being migrated.
+  /* if ($migration->id() == 'd7_node_type') {
+     $ignore_content_types = array('content_type1', 'content_type2');
+     if (in_array($row->getSource()['type'], $ignore_content_types)) {
+       return FALSE;
+     }
+   }
+
+   // Ignoring content of 4 content types.
+   $ignore_content_types_content = array('d7_node__content_type1', 'd7_node__content_type2');
+   if (in_array($migration->id(), $ignore_content_types_content)) {
+     return FALSE;
+   }*/
+}

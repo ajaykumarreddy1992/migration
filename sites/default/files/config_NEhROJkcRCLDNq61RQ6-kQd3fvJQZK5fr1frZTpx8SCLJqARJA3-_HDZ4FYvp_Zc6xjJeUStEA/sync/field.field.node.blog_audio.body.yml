@@ -1,0 +1,22 @@
+uuid: e867f581-a63b-4b10-8c78-594b5525c4eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.blog_audio
+  module:
+    - text
+id: node.blog_audio.body
+field_name: body
+entity_type: node
+bundle: blog_audio
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

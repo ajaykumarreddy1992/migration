@@ -1,0 +1,22 @@
+uuid: 344a5cf7-0870-4e1c-a8fb-bedd878f90b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.smart_method
+  module:
+    - text
+id: node.smart_method.body
+field_name: body
+entity_type: node
+bundle: smart_method
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

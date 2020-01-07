@@ -1,0 +1,8 @@
+migrate_custom.migrationsummary:
+  path: '/migration_summary'
+  defaults:
+    _title: 'Summary Report'
+    _controller: 'Drupal\migrate_custom\Controller\MigrationSummary::generateReport'
+  requirements:
+    _permission: 'access content'
+

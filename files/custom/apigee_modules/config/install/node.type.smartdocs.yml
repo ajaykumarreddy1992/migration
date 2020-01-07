@@ -1,0 +1,18 @@
+uuid: aba21f8c-1722-49d3-a30d-91e23c9cc32e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: SmartDocs
+type: smartdocs
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

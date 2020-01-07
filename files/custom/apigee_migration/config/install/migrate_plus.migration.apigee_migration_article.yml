@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies: {  }
+id: apigee_migration_article
+migration_group: apigee_migration
+label: 'Nodes (Article)'
+deriver: Drupal\node\Plugin\migrate\D7NodeDeriver
+source:
+  plugin: article_node
+process:
+  nid: nid
+  vid: vid
+  path: alias
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  body:
+    plugin: iterator
+    source: body
+    process:
+      value: value
+      summary: summary
+      format:
+        plugin: default_value
+        default_value: full_html
+destination:
+  plugin: 'entity:node'
+  default_bundle: article

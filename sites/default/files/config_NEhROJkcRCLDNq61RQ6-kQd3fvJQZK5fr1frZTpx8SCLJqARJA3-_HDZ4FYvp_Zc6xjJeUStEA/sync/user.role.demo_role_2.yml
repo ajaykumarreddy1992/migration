@@ -1,0 +1,9 @@
+uuid: 39aa9a33-7f2e-47b9-a970-5ba4478b4d36
+langcode: en
+status: true
+dependencies: {  }
+id: demo_role_2
+label: 'Demo Role 2'
+weight: 14
+is_admin: null
+permissions: {  }

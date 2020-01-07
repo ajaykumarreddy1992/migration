@@ -1,0 +1,10 @@
+uuid: 4e5b9ffe-99da-4116-9ccb-cb1d87077ec7
+langcode: en
+status: true
+dependencies: {  }
+id: tpp_developer
+label: 'TPP Developer'
+weight: 3
+is_admin: null
+permissions:
+  - 'access fca registration forms'

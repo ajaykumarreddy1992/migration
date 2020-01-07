@@ -1,0 +1,40 @@
+id: custom_user
+label: Custom user migration
+migration_group: custom
+ 
+# define a forced module dependency. this will cause the migration definition to be reloaded
+# when you uninstall and reinstall your custom module.
+dependencies:
+  enforced:
+    module:
+      - migrate_custom
+
+source:
+  plugin: custom_user
+  # The "target" here refers to the database connection where the source data lives.
+  # You will need to configure this database in your settings.php.
+  target: migrate
+
+destination:
+  plugin: entity:user
+
+process:
+  # Field mappings and transformations will go here. We will get to this in a minute.
+  uid: uid
+  name: name
+  pass: pass
+  mail: mail
+  status: status
+  created: created
+  changed: changed
+  access: access
+  login: login
+  timezone: timezone
+  langcode:
+    plugin: default_value
+    default_value: en
+  init: init
+  # User custom created fields
+  field_first_name: first_name
+  field_last_name: last_name
+  

@@ -1,0 +1,10 @@
+name: Apigee Migrate
+type: module
+description: Migrate Apigee users and content
+core: 8.x
+package: Custom
+dependencies:
+  - migrate_plus
+  - migrate_drupal
+  - migrate
+  - migrate_tools

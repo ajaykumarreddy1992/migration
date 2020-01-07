@@ -1,0 +1,28 @@
+uuid: c024a210-fd4f-4c83-afd2-4317d66bb817
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_audio.body
+    - node.type.blog_audio
+  module:
+    - text
+    - user
+id: node.blog_audio.default
+targetEntityType: node
+bundle: blog_audio
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

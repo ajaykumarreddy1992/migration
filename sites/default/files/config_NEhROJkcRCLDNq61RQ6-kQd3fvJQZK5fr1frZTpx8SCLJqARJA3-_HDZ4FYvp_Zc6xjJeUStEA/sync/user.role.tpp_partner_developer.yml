@@ -1,0 +1,9 @@
+uuid: 7522c413-e079-496d-b952-df46ba60dbef
+langcode: en
+status: true
+dependencies: {  }
+id: tpp_partner_developer
+label: 'TPP Partner Developer'
+weight: 4
+is_admin: null
+permissions: {  }

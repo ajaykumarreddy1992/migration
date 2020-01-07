@@ -1,0 +1,28 @@
+uuid: 7b34284e-5253-40c8-8237-3de3ae2872a5
+langcode: en
+status: true
+dependencies: {  }
+id: tpp_administrator
+label: 'TPP Administrator'
+weight: 17
+is_admin: null
+permissions:
+  - 'access administration menu'
+  - 'access administration pages'
+  - 'access fca registration forms'
+  - 'access mail logger'
+  - 'access rules debug'
+  - 'access user profiles'
+  - 'administer organization settings'
+  - 'administer permissions'
+  - 'administer reroute email'
+  - 'administer rules'
+  - 'administer users'
+  - 'approve onboarding app'
+  - 'bypass rules access'
+  - 'cancel account'
+  - 'change own username'
+  - 'flush caches'
+  - 'manage all companies'
+  - 'select account cancellation method'
+  - 'view the administration theme'

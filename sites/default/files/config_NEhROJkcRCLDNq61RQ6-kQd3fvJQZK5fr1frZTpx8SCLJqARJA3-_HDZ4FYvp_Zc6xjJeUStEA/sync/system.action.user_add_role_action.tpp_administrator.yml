@@ -1,0 +1,14 @@
+uuid: b5d21e94-aa22-4a67-8b9c-e0093aea3657
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tpp_administrator
+  module:
+    - user
+id: user_add_role_action.tpp_administrator
+label: 'Add the TPP Administrator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: tpp_administrator

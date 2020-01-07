@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies: {  }
+id: apigee_migration_user
+migration_tags: null
+migration_group: apigee_migration
+label: 'User accounts'
+source:
+  plugin: apigee_migration_user
+process:
+  uid: uid
+  name: name
+  pass: pass
+  mail: mail
+  created: created
+  access: access
+  login: login
+  status: status
+  timezone: timezone
+  langcode:
+    plugin: default_value
+    default_value: en
+  preferred_langcode: language
+  preferred_admin_langcode: language
+  init: init
+  first_name: field_first_name
+  last_name: field_last_name
+  roles:
+    plugin: migration_lookup
+    migration: apigee_migration_user_role
+    source: roles
+  user_picture:
+    -
+      plugin: default_value
+      source: picture
+      default_value: null
+    -
+      plugin: migration
+      migration: file
+destination:
+  plugin: 'entity:user'

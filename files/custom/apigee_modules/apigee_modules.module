@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Contains apigee_modules.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function apigee_modules_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the apigee_modules module.
+    case 'help.page.apigee_modules':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Apigee Required Modules') . '</p>';
+      return $output;
+    default:
+  }
+}

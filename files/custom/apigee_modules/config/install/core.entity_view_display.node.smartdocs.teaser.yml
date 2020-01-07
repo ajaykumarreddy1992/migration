@@ -1,0 +1,20 @@
+uuid: 64372807-f771-4228-bff0-53543382ce1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.smartdocs
+  module:
+    - user
+id: node.smartdocs.teaser
+targetEntityType: node
+bundle: smartdocs
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

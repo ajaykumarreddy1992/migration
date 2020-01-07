@@ -1,0 +1,14 @@
+uuid: e413908f-ef8e-4902-9ee4-e756fcd5d888
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tpp_administrator
+  module:
+    - user
+id: user_remove_role_action.tpp_administrator
+label: 'Remove the TPP Administrator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: tpp_administrator

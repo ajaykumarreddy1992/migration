@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies: {  }
+id: apigee_migration_context
+migration_group: apigee_migration
+label: 'Context'
+source:
+  plugin: apigee_migration_context
+process:
+  name: name
+  label: label
+  weight: weight
+  status: status
+  description: description
+  langcode: langcode
+  requireAllConditions: requireAllConditions
+destination:
+  plugin: 'entity:context'

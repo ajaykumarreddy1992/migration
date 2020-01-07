@@ -1,0 +1,14 @@
+uuid: 2c642720-ec20-4e48-9de3-651400a0812e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tpp_partner_developer
+  module:
+    - user
+id: user_remove_role_action.tpp_partner_developer
+label: 'Remove the TPP Partner Developer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: tpp_partner_developer

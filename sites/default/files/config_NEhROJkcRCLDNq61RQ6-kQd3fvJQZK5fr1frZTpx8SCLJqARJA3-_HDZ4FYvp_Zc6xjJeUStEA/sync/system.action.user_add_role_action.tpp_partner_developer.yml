@@ -1,0 +1,14 @@
+uuid: 2467565a-ea55-455b-874c-deac41e8fab8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tpp_partner_developer
+  module:
+    - user
+id: user_add_role_action.tpp_partner_developer
+label: 'Add the TPP Partner Developer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: tpp_partner_developer

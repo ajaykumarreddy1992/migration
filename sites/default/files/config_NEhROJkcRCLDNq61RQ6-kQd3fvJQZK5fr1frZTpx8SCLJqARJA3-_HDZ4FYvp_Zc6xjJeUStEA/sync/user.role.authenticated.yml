@@ -1,0 +1,24 @@
+uuid: afb0ac3e-050c-4a57-871a-13aadd23c919
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'create apigee company'
+  - 'create forum content'
+  - 'diff view changes'
+  - 'edit own forum content'
+  - 'post comments'
+  - 'search content'
+  - 'use text format filtered_html'
+  - 'view developer apps'
+  - 'view faq page'
+  - 'view files'

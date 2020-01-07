@@ -1,0 +1,22 @@
+uuid: 7a1772bd-0e33-4466-ab03-067d2034aadd
+langcode: en
+status: true
+dependencies: {  }
+id: api_administrator
+label: 'API Administrator'
+weight: 16
+is_admin: null
+permissions:
+  - 'access administration menu'
+  - 'access administration pages'
+  - 'access smart docs'
+  - 'administer devconnect_user settings'
+  - 'administer developer apps'
+  - 'administer permissions'
+  - 'administer smartdocs content'
+  - 'administer smartdocs templates'
+  - 'administer taxonomy'
+  - 'bypass node access'
+  - 'flush caches'
+  - 'view devconnect errors'
+  - 'view the administration theme'
